@@ -1,5 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { Container } from 'postcss';
+import Button from '../comps/Buttons';
+import { motion } from 'framer-motion';
+import Dash from '../comps/Dash';
 
 export default function Home() {
   return (
@@ -8,46 +12,16 @@ export default function Home() {
       <title>Matio App</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <p>Hello world!</p>
- 
-        <button>
-            <Image 
-              src='/assets/vlog.png' 
-              alt = "vlog "
-              width = {200} 
-              height = {200} 
-              />
-        </button>
+    <div
+            className={
+              'xs:text-3xl sm:text-4xl md:text-5xl font-bold text-center'
+            }> Matio App! </div>
 
-        <button>
-            <Image 
-                src='/assets/interview.png' 
-                alt = "interview "
-                width = {200} 
-                height = {200} 
-            />
-        </button>
-
-        <button>
-            <Image 
-                src='/assets/presentation.png' 
-                alt = "presentation "
-                width = {200} 
-                height = {200} 
-            />
-        </button>
-
-        <button>
-            <Image 
-                src='/assets/demo.png' 
-                alt = "demo "
-                width = {200} 
-                height = {200} 
-            />
-        </button>
-      </div>
-
-      
-
+    <p className="xs:text-lg sm:text-xl md:text-2xl mt-2 text-center">
+            What's featured in your video:
+          </p>
+    <Button />
+    {/* <Dash /> */}
+    </div>
   )
 }
