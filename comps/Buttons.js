@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState, setState, Component } from 'react';
+import React, { Component } from 'react';
 import Eventhandler from '../comps/Eventhandler';
 
 class Buttons extends Component {
@@ -15,67 +15,44 @@ class Buttons extends Component {
                 event:['/images/interview_branch.png' ,
                 '/images/presentation_branch.png', 
                 '/images/vlog_branch.png',
-                '/images/demo_branch.png']
-        }
-      }
-    eventhandler(name) {
-         
-                if (name == "Interview"){
-                  return (  
-                    <Image 
-                        src = '/images/interview_branch.png'
-                        width = {100}
-                        height = {100}
-                        />
-                  )
-                }
-                else if(name == "Presentation"){
-                    return (
-                        <Image 
-                            src = '/images/presentation_branch.png'
-                            width = {100}
-                            height = {100}
-                        />
-                    )
-                }
-                else if(name == "Vlog"){
-                    return (
-                        <Image 
-                            src =  '/images/vlog_branch.png'
-                            width = {100}
-                            height = {100}
-                        />
-                    )
-                }
-                else if(name == 'Demo') {
-                    return (
-                        <Image 
-                            src = '/images/demo_branch.png'
-                            width = {100}
-                            height = {100}
-                        />
-                    )
-                }
-        }
-        handleClick() {
-            this.setState({
-              clicked: true
-            });
-          }
+                '/images/demo_branch.png'],
+                clicked: false
+            }
+        
+    }
     
+        eventhandler(event) {
+        
+            // {this.state.event.map((e, index) => (
+                
+            //     i == index ?
+            //         <Image 
+            //             src = {this.state.event[index]}
+            //             width = {100}
+            //             height = {100}
+            //         />
+            //     :
+            //         null
+            // ))}
+            console.log(event.target.id);
+        }
+    
+       handleClick = () => {
+            this.setState({ clicked: true} );
+        }
+        
       render() {
         return (  
             <div class = "w-full xs:text-lg sm:text-xl md:text-2xl xs:mt-4 md:mt-5 lg:mt-10 grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 xs:gap-2 sm:gap-4 md:gap-6 xl:gap-10 px-8 xxl:px-20"> 
                 {this.state.buttonName.map((name, index) => (
-                        <button onClick = {this.handleClick}>
-                            {this.state.clicked ? <Eventhandler /> : null}
-                            {<Image 
+                        <button id = {name} onClick = {this.eventhandler}>
+                            {/* {this.state.clicked ? this.eventhandler(index) : null} */}
+                                {<Image 
                                 src = {this.state.path[index]}
                                 width = {100}
                                 height = {100}
-                                />
-                            }
-                            <div>{name} </div> 
+                                />}
+                            <div> {name} </div> 
                         </button>
                 ))}
              </div>
