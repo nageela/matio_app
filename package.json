@@ -1,0 +1,32 @@
+{
+  "name": "with-tailwindcss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build:": "next build",
+    "start": "next start",
+    "build:css": "tailwind build styles/index.css -o dist/index.css"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "framer-motion": "^4.1.17",
+    "material-ui": "^0.20.2",
+    "next": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-native-dashed-line": "^1.1.0",
+    "react-native-web": "^0.16.5",
+    "react-tap-event-plugin": "^3.0.3",
+    "sass": "^1.34.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.10",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "precss": "^4.0.0",
+    "tailwindcss": "^2.2.4"
+  }
+}
