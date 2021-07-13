@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Buttonlong from '../comps/Buttonlong';
+import Buttonnew from '../comps/Buttonnew';
 import Buttons from '../comps/Buttons';
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
     <p className="xs:text-lg sm:text-xl md:text-2xl mt-2 text-center">
             What's featured in your video:
           </p>
-    <Buttonlong />
+    <Buttonnew />
     </div>
   )
 }
