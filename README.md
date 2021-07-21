@@ -5,6 +5,10 @@ M:ATIO Social Video App
 
 This is an informative and interactive webapp to help cerebriam studios understand the importance of aspect ratio (matio) and how it affects different types of content e.g. vlog style video, interview style video etc. 
 
+#### Current state of the app
+
+Currently when the app is viewed the title and four buttons (interview, vlog, demo and presentation) are displayed, however the buttons are not functional. 
+
 ## Setting up the app on your local device
 
   1. Install nodejs version 12.14.1 
@@ -17,7 +21,5 @@ This is an informative and interactive webapp to help cerebriam studios understa
   1. `npm run dev`
 
 
-##### Current state of the app
 
-Currently when the app is viewed the title and four buttons (interview, vlog, demo and presentation) are displayed, however the buttons are not functional. 
 
