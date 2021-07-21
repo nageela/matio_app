@@ -12,7 +12,7 @@ Currently when the app is viewed the title and four buttons (interview, vlog, de
 ## Setting up the app on your local device
 
   1. Install nodejs version 12.14.1 
-  2.`git clone <repositry>`
+  2. `git clone <repositry>`
   3. `cd <repository>`
   4. `npm install`
 
