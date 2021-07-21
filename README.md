@@ -9,6 +9,12 @@ This is an informative and interactive webapp to help cerebriam studios understa
 
 Currently when the app is viewed the title and four buttons (interview, vlog, demo and presentation) are displayed, however the buttons are not functional. 
 
+#### Technologies
+
+While creating this app the following were used;
+  - Nodejs
+  - Tailwindcss
+
 ## Setting up the app on your local device
 
   1. Install nodejs version 12.14.1 
