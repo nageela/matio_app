@@ -16,3 +16,8 @@ This is an informative and interactive webapp to help cerebriam studios understa
 
   1. `npm run dev`
 
+
+##### Current state of the app
+
+Currently when the app is viewed the title and four buttons (interview, vlog, demo and presentation) are displayed, however the buttons are not functional. 
+
